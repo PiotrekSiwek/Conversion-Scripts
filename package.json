@@ -1,0 +1,23 @@
+{
+  "name": "conversion-scripts",
+  "version": "1.0.0",
+  "description": "Repository with useful scripts",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@scr.bsh-sdd.com:7999/~sip2wz/conversion-scripts.git"
+  },
+  "author": "Piotr Siwek",
+  "private": true,
+  "dependencies": {
+    "commander": "10.0.0",
+    "js-yaml": "4.1.0"
+  },
+  "scripts": {
+    "eslint": "eslint -c .eslintrc.js \"scripts/**/*.{js,jsx}\"",
+    "format": "prettier --config .prettierrc.json --ignore-path .gitignore --write \"scripts/**/*.{js,jsx}\""
+  },
+  "devDependencies": {
+    "eslint": "8.33.0",
+    "prettier": "2.8.4"
+  }
+}
